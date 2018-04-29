@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<database>
+    <element label="Appointment Bookings" max_length="40" name="x_208836_appoint_b_pending_appointments" type="collection">
+        <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Appointee Email" mandatory="true" max_length="40" name="u_appointee_email" type="string"/>
+        <element label="Appointment Time" mandatory="true" max_length="40" name="u_appointment_time" type="glide_date_time"/>
+        <element choice="3" default="pending" label="Status" max_length="40" name="u_integer_1" type="integer">
+            <choice/>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Reason" mandatory="true" max_length="4000" name="u_reason" type="string"/>
+        <element label="Request Appointment with" mandatory="true" max_length="32" name="u_request_appointment" reference="sys_user" type="reference"/>
+        <element choice="3" default="1" label="Status" max_length="40" name="u_status" type="integer">
+            <choice>
+                <element label="Pending" sequence="0" value="1"/>
+                <element label="Approved" sequence="1" value="2"/>
+                <element label="Denied" sequence="2" value="3"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" display="true" label="Email of Requestee" mandatory="true" max_length="40" name="u_string_2" type="string"/>
+        <index name="index">
+            <element name="u_request_appointment"/>
+        </index>
+    </element>
+</database>

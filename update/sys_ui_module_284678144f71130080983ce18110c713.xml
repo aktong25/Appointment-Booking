@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update sys_domain="global" table="sys_ui_module">
+    <sys_ui_module action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <application display_value="Appointment Booking">6c4678144f71130080983ce18110c711</application>
+        <filter/>
+        <name>Pending Appointments</name>
+        <order/>
+        <path/>
+        <path_relative_to_root>false</path_relative_to_root>
+        <roles>x_208836_appoint_b.pending_appointments_user</roles>
+        <sys_class_name>sys_ui_module</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-26 20:50:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>284678144f71130080983ce18110c713</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Pending Appointments</sys_name>
+        <sys_package display_value="Appoint Booking" source="x_208836_appoint_b">7e1727a34fa1130080983ce18110c7ec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Appoint Booking">7e1727a34fa1130080983ce18110c7ec</sys_scope>
+        <sys_update_name>sys_ui_module_284678144f71130080983ce18110c713</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-26 20:50:24</sys_updated_on>
+        <table>x_208836_appoint_b_pending_appointments</table>
+        <uncancelable>false</uncancelable>
+        <view_name/>
+    </sys_ui_module>
+</record_update>

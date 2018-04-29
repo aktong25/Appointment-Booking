@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+    <sys_documentation element="u_request_appointment" label="Request Appointment with" language="en" table="x_208836_appoint_b_pending_appointments">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_request_appointment</element>
+            <help/>
+            <hint/>
+            <label>Request Appointment with</label>
+            <language>en</language>
+            <name>x_208836_appoint_b_pending_appointments</name>
+            <plural>Request Appointment with</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2018-04-27 02:01:09</sys_created_on>
+            <sys_id>506dfdd44ff1130080983ce18110c73a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Request Appointment with</sys_name>
+            <sys_package display_value="Appoint Booking" source="x_208836_appoint_b">7e1727a34fa1130080983ce18110c7ec</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="Appoint Booking">7e1727a34fa1130080983ce18110c7ec</sys_scope>
+            <sys_update_name>sys_documentation_x_208836_appoint_b_pending_appointments_u_request_appointment_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2018-04-27 02:01:09</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

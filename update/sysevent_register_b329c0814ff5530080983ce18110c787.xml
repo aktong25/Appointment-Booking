@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysevent_register">
+    <sysevent_register action="INSERT_OR_UPDATE">
+        <description>Intermediate to trigger notification</description>
+        <event_name>x_208836_appoint_b.sendNotification</event_name>
+        <fired_by>Business Rule - Send Appointment Request Email</fired_by>
+        <queue/>
+        <suffix>sendNotification</suffix>
+        <sys_class_name>sysevent_register</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-29 01:34:51</sys_created_on>
+        <sys_id>b329c0814ff5530080983ce18110c787</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_208836_appoint_b.sendNotification</sys_name>
+        <sys_package display_value="Appoint Booking" source="x_208836_appoint_b">7e1727a34fa1130080983ce18110c7ec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Appoint Booking">7e1727a34fa1130080983ce18110c7ec</sys_scope>
+        <sys_update_name>sysevent_register_b329c0814ff5530080983ce18110c787</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-29 01:34:51</sys_updated_on>
+        <table>x_208836_appoint_b_pending_appointments</table>
+    </sysevent_register>
+</record_update>

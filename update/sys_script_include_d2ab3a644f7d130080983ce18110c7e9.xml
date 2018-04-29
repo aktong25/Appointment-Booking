@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_208836_appoint_b.validateAppointmentTime</api_name>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>validateAppointmentTime</name>
+        <script><![CDATA[function validateAppointmentTime(dateTime){
+	// Create GlideDateTime objects for the current date and the passed in date
+	var rightnow = new GlideDateTime();
+	var testdate = new GlideDateTime(dateTime);
+	
+	rightnow.addDaysLocalTime(1);
+	
+	// If the testdate is before rightnow + 1 day, return false, else return true
+	if (testdate.before(rightnow)) {
+		return false;
+	}
+	else {
+		return true;
+	}
+}]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-28 01:21:39</sys_created_on>
+        <sys_id>d2ab3a644f7d130080983ce18110c7e9</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>validateAppointmentTime</sys_name>
+        <sys_package display_value="Appoint Booking" source="x_208836_appoint_b">7e1727a34fa1130080983ce18110c7ec</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="Appoint Booking">7e1727a34fa1130080983ce18110c7ec</sys_scope>
+        <sys_update_name>sys_script_include_d2ab3a644f7d130080983ce18110c7e9</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-28 22:24:11</sys_updated_on>
+    </sys_script_include>
+</record_update>
