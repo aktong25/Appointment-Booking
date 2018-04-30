@@ -6,7 +6,7 @@
         <assessment/>
         <content_page/>
         <device_type/>
-        <filter table="x_208836_appoint_b_pending_appointments">u_status!=1^EQ<item endquery="false" field="u_status" goto="false" newquery="false" operator="!=" or="false" value="1"/>
+        <filter table="x_208836_appoint_b_pending_appointments">u_status=1^EQ<item endquery="false" field="u_status" goto="false" newquery="false" operator="=" or="false" value="1"/>
             <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
         </filter>
         <hint>List of all pending appointments</hint>
@@ -28,7 +28,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>284678144f71130080983ce18110c70f</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>All Pending Appointments</sys_name>
         <sys_overrides/>
         <sys_package display_value="Appoint Booking" source="x_208836_appoint_b">7e1727a34fa1130080983ce18110c7ec</sys_package>
@@ -36,7 +36,7 @@
         <sys_scope display_value="Appoint Booking">7e1727a34fa1130080983ce18110c7ec</sys_scope>
         <sys_update_name>sys_app_module_284678144f71130080983ce18110c70f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2018-04-29 18:15:11</sys_updated_on>
+        <sys_updated_on>2018-04-30 19:48:25</sys_updated_on>
         <timeline_page/>
         <title>All Pending Appointments</title>
         <uncancelable>false</uncancelable>

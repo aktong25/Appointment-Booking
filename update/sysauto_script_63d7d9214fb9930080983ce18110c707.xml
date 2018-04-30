@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sysauto_script">
+    <sysauto_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition/>
+        <conditional>false</conditional>
+        <name>Delete Past Appointment Requests</name>
+        <run_as display_value="System Administrator">6816f79cc0a8016401c5a33be04be441</run_as>
+        <run_as_tz/>
+        <run_dayofmonth>1</run_dayofmonth>
+        <run_dayofweek>1</run_dayofweek>
+        <run_period/>
+        <run_start>2018-04-30 20:29:40</run_start>
+        <run_time>1970-01-01 08:00:00</run_time>
+        <run_type>daily</run_type>
+        <script><![CDATA[var rightnow = new GlideDateTime();
+var gr = new GlideRecord('x_208836_appoint_b_pending_appointments');
+gr.addQuery('u_appointment_time', '<', rightnow);
+gr.query();
+while(gr.next()){
+	gr.deleteRecord();
+}
+]]></script>
+        <sys_class_name>sysauto_script</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-04-30 20:30:07</sys_created_on>
+        <sys_id>63d7d9214fb9930080983ce18110c707</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_name>Delete Past Appointment Requests</sys_name>
+        <sys_package display_value="Appoint Booking" source="x_208836_appoint_b">7e1727a34fa1130080983ce18110c7ec</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Appoint Booking">7e1727a34fa1130080983ce18110c7ec</sys_scope>
+        <sys_update_name>sysauto_script_63d7d9214fb9930080983ce18110c707</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-04-30 20:49:50</sys_updated_on>
+        <upgrade_safe>false</upgrade_safe>
+    </sysauto_script>
+</record_update>
